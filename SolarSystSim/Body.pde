@@ -1,20 +1,26 @@
 class Body {
-  float DENSITY = 3.93; // Assume Earth's avg density
+  float DENSITY = 5510; // Assume Earth's average density
   
+  float x, y;
+  String name;
   float mass;
   float radius;
-  color CoLoR; // HiLaRiOuS
+  color CoLoR;
   
-  Body(float mass, color CoLoR) {
+  Body(float x, float y, String name, float mass, color CoLoR) {
+    this.x = x;
+    this.y = y;
+    this.name = name;
     this.mass = mass;
-    this.radius = pow(mass / DENSITY, 1/3.) * 1e-4; // cm -> km
+    this.radius = pow(mass / DENSITY, 1/3.) * 1e-3;
     this.CoLoR = CoLoR;
   }
   
   void printData() {
-    println(DENSITY);
+    System.out.format("(%f, %f)%n", x, y);
+    println(name);
     println(mass);
     println(radius);
-    println(CoLoR);
+    println(hex(CoLoR));
   }
 }
