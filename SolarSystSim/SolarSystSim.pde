@@ -4,23 +4,10 @@
   Dalton Wu
   Brandon Hwang
   Eric He
-  
-  Unit Conventions (MKS):
-  mass      kg
-  radius    km
-  density   kg/m^3
-  force     N
-  
-  Physical constants are found in class Body.
 */
 
 // bodies.get(0) is the central body
 ArrayList<Body> bodies;
-
-// Color values from http://w3schools.com/html/html_colornames.asp
-static color DarkSalmon = #E9967A; // Mars
-static color DeepSkyBlue = #00BFFF; // Earth
-static color EarthColor = #206E4F;
 
 
 void setup() {
@@ -40,11 +27,11 @@ void setup() {
   */
   
   bodies = new ArrayList<Body>();
-  Body mars = new Body(displayWidth/2, displayHeight/2, "Mars", 6.39e23, DarkSalmon);
-  Body earth = new Body(displayWidth/2, displayHeight/2, "Earth", 5.97e24, EarthColor);
+  Body mars = new Body(displayWidth/2, displayHeight/2, 6.39e23, "Mars", U.DarkSalmon);
+  Body earth = new Body(displayWidth/2, displayHeight/2, 5.97e24, "Earth", U.EarthColor);
   bodies.add(earth);
   fill(earth.CoLoR);
-  ellipse(earth.x, earth.y, earth.radius*Body.SCALE, earth.radius*Body.SCALE);
+  ellipse(earth.x, earth.y, earth.r*U.SCALE, earth.r*U.SCALE);
   
 }
 
