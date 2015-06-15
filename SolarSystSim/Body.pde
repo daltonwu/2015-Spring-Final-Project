@@ -33,9 +33,12 @@ static class Body {
   
   // Update velocity. Call before updateX().
   void updateV(Body other) {
-    F.set(other.x - x, other.y - y);
-    F.setMag(getForce(this, other));
+    F.set(other.x - x, other.y - y); // Takes care of direction
+    F.setMag(getForce(this, other)); // Now, magnitude
     v.set(v.x + F.x/m * U.TIME_INT, v.y + F.y/m * U.TIME_INT);
+    println(this.name + ":");
+    println(v.array());
+    println();
   }
   
   // Update position. Call after updateV().

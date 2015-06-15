@@ -15,7 +15,7 @@ static abstract class U {
   static final float SCALE = 2e-2;
   static final float DENSITY = 5510; // Assume Earth's average density
   
-  static final float TIME_INT = 3.15569e6; // Time interval, for position changes; Google:    1 year / 10 to seconds
+  static final float TIME_INT = 1; // Time interval, for position changes; Google:    1 year / 60 to seconds
   
   // COLORS:
   // http://w3schools.com/html/html_colornames.asp

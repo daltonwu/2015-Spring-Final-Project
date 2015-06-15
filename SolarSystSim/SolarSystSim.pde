@@ -25,7 +25,6 @@ void setup() {
 
 void draw() {
   background(0);
-  /*
   for(int i=0; i<bodies.size(); i++) {
     Body b = bodies.get(i);
     
@@ -34,12 +33,4 @@ void draw() {
     fill(b.CoLoR);
     ellipse(b.x, b.y, b.r, b.r);
   }
-  */
-  for(int i=0; i<bodies.size(); i++) {
-    Body b = bodies.get(i);
-    
-    fill(b.CoLoR);
-    ellipse(b.x, b.y, b.r, b.r);
-  }
-  
 }
