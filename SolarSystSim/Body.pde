@@ -2,7 +2,7 @@ static class Body {
   String name;
   float x, y; // center(x, y)
   float m; // mass
-  float r; // radius, a function of mass and U.DENSITY
+  float r; // scaled radius, a function of mass and U.DENSITY
   PVector v; // instantaneous velocity <v.x, v.y>
   PVector F; // instantaneous force (exerted on this) <F.x, F.y>
   color CoLoR;
@@ -13,7 +13,7 @@ static class Body {
     this.x = x;
     this.y = y;
     this.m = m;
-    this.r = pow(m / U.DENSITY, 1/3.) * 1e-3;
+    this.r = pow(m / U.DENSITY, 1/3.) * 1e-3 * U.SCALE;
     v = new PVector();
     F = new PVector();
     this.CoLoR = CoLoR;
