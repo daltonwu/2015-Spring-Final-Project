@@ -19,6 +19,10 @@ static class Body {
     this.CoLoR = CoLoR;
   }
   
+  String toString() {
+    return name;
+  }
+  
   // Debug data (what a pain)
   void printData() {
     println(r);

@@ -20,9 +20,11 @@ void setup() {
   bodies.add(earth);
   bodies.add(mars);
   
+  println(bodies.toArray());
 }
 
 void draw() {
+  background(0);
   for(int i=0; i<bodies.size(); i++) {
     Body b = bodies.get(i);
     
