@@ -12,10 +12,10 @@ static abstract class U {
   
   // PHYSICAL CONSTANTS:
   static final float G = 6.67e-11; // Nm^2/kg^2
-  static final float SCALE = 1e-1;
+  static final float SCALE = 2e-2;
   static final float DENSITY = 5510; // Assume Earth's average density
   
-  static final float TIME_INT = 3.15569e6; // Time interval; Google:    1 year / 10 to seconds
+  static final float TIME_INT = 3.15569e6; // Time interval, for position changes; Google:    1 year / 10 to seconds
   
   // COLORS:
   // http://w3schools.com/html/html_colornames.asp
