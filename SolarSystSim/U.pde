@@ -22,6 +22,6 @@ static abstract class U {
   // http://w3schools.com/html/html_colors.asp
   static color DarkSalmon = #E9967A; // Mars
   static color DeepSkyBlue = #00BFFF; // Earth
-  static color EarthColor = #206E4F; // Trash
-  static color UranusColor = #1A354B; // loool
+  static color EarthColor = #206E4F;
+  static color UranusColor = #1A354B;
 }
