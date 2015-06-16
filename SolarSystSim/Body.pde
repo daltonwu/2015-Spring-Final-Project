@@ -49,7 +49,7 @@ static class Body {
   
   // Static helper method that can be used outside of this class.
   static float getForce(Body one, Body two) {
-    return U.G * one.m * two.m / sq(dist(one.x, one.y, two.x, two.y));
+    return U.G * one.m * two.m / sq(dist(one.x, one.y, two.x, two.y) / U.SCALE * 1e3);
   }
   
   // Display this body. Call after update().
