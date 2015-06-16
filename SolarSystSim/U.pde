@@ -23,4 +23,5 @@ static abstract class U {
   static color DarkSalmon = #E9967A; // Mars
   static color DeepSkyBlue = #00BFFF; // Earth
   static color EarthColor = #206E4F; // Trash
+  static color UranusColor = #1A354B; // loool
 }
